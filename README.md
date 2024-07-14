@@ -1,0 +1,1 @@
+# Moonbit tree-sitter query
