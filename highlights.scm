@@ -78,5 +78,6 @@
 (identifier) @variable
 
 (string_literal) @string
+(string_interpolation) @string
 
 (comment) @comment
