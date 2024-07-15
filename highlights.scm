@@ -1,13 +1,17 @@
 
 [
-  "pub"
   "fn"
+  "pub"
+  "priv"
   "let"
   "mut"
   "struct"
   "enum"
   "test"
   "impl"
+  "trait"
+  "as"
+  "type"
 ] @keyword
 
 (derive) @keyword
@@ -17,6 +21,7 @@
  "else"
  "while"
  "for"
+ "continue"
  "loop"
  "match"
 ] @keyword.conditional
@@ -28,6 +33,7 @@
  "<"
  ">="
  "<="
+ "=>"
  "*"
  "/"
  "%"
@@ -36,7 +42,12 @@
  "-="
  "*="
  "/="
+ "&&"
+ "||"
+ "->"
 ] @operator
+
+(pipe_operator) @operator
 
 ; Punctuation
 [
@@ -48,6 +59,8 @@
   "}"
 ] @punctuation.bracket
 
+(colon) @punctuation
+(type_annotation) @punctuation
 
 (qualified_type_identifier
   (identifier
